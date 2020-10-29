@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
+
+}
+
+.grid {
+    display: grid;
+    grid-template: "1fr 1fr 1fr";
+    grid-gap: 1px;
+    width: 100%;
+    height: 70vh;
+
+}
+
+.box {
+    padding: 10px;
+    border: 1px solid black;
+
+}
+
+.duck {
+    background-image: url('./kaczor.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.thunder {
+    background-image: url('./thunder.jpg') !important;
+}
