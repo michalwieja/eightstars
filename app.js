@@ -12,7 +12,7 @@ function startgame() {
   interval = setInterval(countdown, 1000);
 
   function moveDuck() {
-    setInterval(randomBox, 1000);
+    setInterval(randomBox, 250);
   }
   moveDuck();
 }
@@ -44,7 +44,7 @@ function countdown() {
 
   if (currentTime === 0) {
     alert(`game over. twoj wynik to ${result}`);
-    body.style.display = "none";
+    window.location.reload(true);
     clearInterval(interval);
   }
 }
