@@ -21,7 +21,7 @@ body {
     display: grid;
     grid-template: "1fr 1fr 1fr";
     grid-gap: 1px;
-    width: 100%;
+    width: 70vh;
     height: 70vh;
 
 }
@@ -40,4 +40,10 @@ body {
 
 .thunder {
     background-image: url('./thunder.jpg') !important;
+}
+
+@media(max-width: 1024px) {
+    .grid {
+        width: 100%;
+    }
 }
